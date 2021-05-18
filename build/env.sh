@@ -10,7 +10,7 @@ fi
 # Create fake Go workspace if it doesn't exist yet.
 workspace="$PWD/build/_workspace"
 root="$PWD"
-ethdir="$workspace/src/github.com/specialiumchain"
+ethdir="$workspace/src/github.com/specialpowerchain"
 if [ ! -L "$ethdir/go-specialiuma" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"

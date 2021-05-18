@@ -21,7 +21,7 @@ Section "Uninstall"
   SimpleFC::AdvRemoveRule "Gsp outgoing peers (TCP:33990)"
   SimpleFC::AdvRemoveRule "Gsp UDP discovery (UDP:33990)"
 
-  # Remove IPC endpoint (https://github.com/specialiumchain/EIPs/issues/147)
+  # Remove IPC endpoint (https://github.com/specialpowerchain/EIPs/issues/147)
   ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gsp.ipc"
 
   # Remove install directory from PATH
